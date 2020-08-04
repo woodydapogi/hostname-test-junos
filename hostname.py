@@ -8,7 +8,6 @@ except ImportError as err:
 
 #connect to routers.
 routers = [f'192.168.1.{n}' for n in range(99, 103)]
-loopback = [f'1.1.1{n}' for n in range(1, 3)]
 
 def conn(username, passwd, port):
     for router, n in zip(routers, range(1, 5)):
